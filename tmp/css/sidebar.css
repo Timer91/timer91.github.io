@@ -1,0 +1,137 @@
+div#sidebar {
+	overflow:hidden;
+	width:300px;
+   -webkit-touch-callout: none;
+	 -webkit-user-select: none;
+	  -khtml-user-select: none;
+	    -moz-user-select: none;
+	     -ms-user-select: none;
+	    	 user-select: none; 
+	-webkit-transition: width 0.5s ease;
+	   -moz-transition: width 0.5s ease;
+	    -ms-transition: width 0.5s ease;
+	     -o-transition: width 0.5s ease;
+	        transition: width 0.5s ease; }
+	div.sidebar-close { width:50px !important; }
+	div#sidebar div.container div#menu {
+		overflow:hidden;
+		position:absolute;
+		left:0;
+		width:300px; height:100%;
+		background-color:#3498DB;
+		-webkit-transition:left 0.5s ease;
+		   -moz-transition:left 0.5s ease;
+			-ms-transition:left 0.5s ease;
+			 -o-transition:left 0.5s ease;
+				transition:left 0.5s ease; }
+		div#sidebar div.container div.sd-menu-move { left:-250px !important; } 
+		div#sidebar div.container div#menu span#title-menu {
+			display:block;
+			position:absolute;
+			top:1.3em; left:0.8em;
+			font-size:4.5em;
+			font-weight:900; color:#2980B9;
+			text-shadow:0px 1px 0px rgba(255,255,255,0.3); }
+		div#sidebar div.container div#menu ul#list-menu {
+			z-index:4;
+			display:block;
+			position:absolute;
+			width:6em;
+			top:7em; left:2.1em;
+			list-style-type:none;
+			font-size:2.4em;
+			-webkit-margin-before: 0em;
+			-webkit-margin-after: 0em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+			-webkit-padding-start:0; }
+			div#sidebar div.container div#menu ul#list-menu > * {
+				display:block;
+				padding:0.1em 0.2em;
+				margin:0.2em 0;
+				cursor:pointer;
+				-webkit-transition:text-indent ease-in-out 0.2s;
+				   -moz-transition:text-indent ease-in-out 0.2s;
+				 	 -o-transition:text-indent ease-in-out 0.2s;
+					    transition:text-indent ease-in-out 0.2s; }
+			div#sidebar div.container div#menu ul#list-menu > *:hover {
+				text-indent:15px;
+				border-left:5px solid rgba(255,255,255,0.6);
+				background:rgba(255,255,255,0.15); }
+				.select-tab {
+					text-indent:15px;
+					border-left:5px solid rgba(255,255,255,0.6);
+					background:rgba(255,255,255,0.15); }
+	  	div#sidebar div.container div#menu div#design-round {
+	  		z-index:2;
+			width:100%;
+			height:40%;
+			position:absolute;
+			bottom:0; }
+		div#sidebar div.container div#menu div#design-round > * { z-index:3; position:absolute; border-radius:100%; }
+			div#sidebar div.container div#menu div#design-round :first-child {
+				top:15px; left:-332px;
+				width:500px; height:500px;
+				border:76px solid rgba(255,255,255,0.22);
+				border-top-color:transparent;
+				border-bottom-color:transparent;
+				-webkit-animation:spin 9s infinite linear;
+				   -moz-animation:spin 9s infinite linear;
+				     -o-animation:spin 9s infinite linear;
+				       -animation:spin 9s infinite linear; }
+			div#sidebar div.container div#menu div#design-round :nth-child(2) {
+				top:122px; left:-256px;
+				width:350px; height:350px;
+				border:56px solid rgba(255,255,255,0.22);
+				border-left-color:transparent;
+				border-right-color:transparent;
+				-webkit-animation:spinR 10s infinite linear;
+				   -moz-animation:spinR 10s infinite linear;
+				     -o-animation:spinR 10s infinite linear;
+				       -animation:spinR 10s infinite linear; }
+			div#sidebar div.container div#menu div#design-round :nth-child(3) {
+				top:231px; left:-140px;
+				width:200px; height:200px;
+				border:22px solid rgba(255,255,255,0.22);
+				border-left-color:transparent;
+				border-right-color:transparent;
+				-webkit-animation:spin 6s infinite linear;
+				   -moz-animation:spin 6s infinite linear;
+				     -o-animation:spin 6s infinite linear;
+				       -animation:spin 6s infinite linear; }
+	div#sidebar div.container div#menu span.btn {
+		z-index:2;
+		display:block;
+		position:absolute;
+		width:50px;
+		height:47px;
+		top:0; right:0;
+		text-align:center;
+		-webkit-transition:background .3s ease-out, opacity ease 0.2s;
+		   -moz-transition:background .3s ease-out, opacity ease 0.2s;
+	     	 -o-transition:background .3s ease-out, opacity ease 0.2s;
+		   	   -transition:background .3s ease-out, opacity ease 0.2s; }
+		div#sidebar div.container div#menu span#lang-btn  	 	   { opacity:0; cursor:pointer; }
+			div#sidebar div.container div#menu span#lang-btn i 	   { margin-top:12%; }
+			div#sidebar div.container div#menu:hover span#lang-btn { opacity:1 !important; }
+			div#sidebar div.container div#menu span#lang-btn:hover { background-color:#56A8E0; }
+		div#sidebar div.container div#menu span#lang-flag { opacity:0; top:47px; transition:inherit; }
+		div#sidebar div.container div#menu i.fa-arrow-right { 
+			position:absolute; 
+			top:50%; right:3%;
+			margin-top:-18px; 
+			-webkit-transition:opacity ease-in-out 0.2s;
+	           -moz-transition:opacity ease-in-out 0.2s;
+	             -o-transition:opacity ease-in-out 0.2s;
+	                transition:opacity ease-in-out 0.2s; }
+			div#sidebar div.container div#menu:hover i.fa-arrow-right { opacity:0; }
+
+/* Keyframes */
+@-webkit-keyframes spin { from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(360deg);} }
+@-moz-keyframes    spin { from {   -moz-transform: rotate(0deg);} to {   -moz-transform: rotate(360deg);} }
+@-o-keyframes      spin { from {     -o-transform: rotate(0deg);} to {     -o-transform: rotate(360deg);} }
+@keyframes 		   spin { from {        transform: rotate(0deg);} to {        transform: rotate(360deg);} }
+@-webkit-keyframes spinR { from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(-360deg);} }
+@-moz-keyframes    spinR { from {   -moz-transform: rotate(0deg);} to {   -moz-transform: rotate(-360deg);} }
+@-o-keyframes      spinR { from {     -o-transform: rotate(0deg);} to {     -o-transform: rotate(-360deg);} }
+@keyframes 		   spinR { from {        transform: rotate(0deg);} to {        transform: rotate(-360deg);} }

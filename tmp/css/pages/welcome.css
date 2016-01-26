@@ -1,0 +1,15 @@
+div#pages div.container section#welcome { background-color: rgb(226, 226, 226); }
+div#pages div.container section#welcome div { 
+	position:relative;
+	top:50%;
+	margin-top:-150px;
+	text-align:center; }
+	div#pages div.container section#welcome div span[lang] {
+		padding: 0.2em 0.7em;
+		font-size:99px;
+		text-shadow:1px 1px rgba(0, 0, 0, 0.17);
+        -webkit-box-shadow: 0 2px 0px rgba(255, 255, 255, 0.28);
+		   -moz-box-shadow: 0 2px 0px rgba(255, 255, 255, 0.28);
+                box-shadow: 0 2px 0px rgba(255, 255, 255, 0.28);
+		border-bottom:2px solid rgba(0, 0, 0, 0.17); }
+
